@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital - Início</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-inter bg-gray-100 text-gray-800">
+
+    <nav class="bg-gray-900 text-white p-4 flex flex-col sm:flex-row justify-between items-center rounded-b-lg">
+        <div class="flex items-center mb-4 sm:mb-0">
+            <span class="text-2xl font-bold mr-4">Biblioteca Digital</span>
+        </div>
+
+        <div class="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2">
+            <a href="index.html" class="hover:text-blue-400 transition-colors duration-300">Início</a>
+            <a href="produtos.html" class="hover:text-blue-400 transition-colors duration-300">Livros</a>
+            <a href="contato.html" class="hover:text-blue-400 transition-colors duration-300">Contato</a>
+            <a href="#sobre" class="hover:text-blue-400 transition-colors duration-300">Sobre</a>
+        </div>
+    </nav>
+
+    <header
+        style="position: relative; background-color: #374151; color: white; padding: 4rem 1rem; text-align: center; overflow: hidden; border-radius: 0.5rem; margin: 1rem;">
+        <div style="position: absolute; inset: 0; z-index: 10; opacity: 0.2;">
+            <img src="https://casacor.abril.com.br/_next/image?url=https%3A%2F%2Fd2iwr6cbo83dtj.cloudfront.net%2F2025%2F04%2FBiblioteca-da-Universidade-Trinity-College-%E2%80%94-Dublin-Irlanda.webp&w=1920&q=75"
+                alt="Biblioteca digital com prateleiras de livros"
+                style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="position: relative; z-index: 20;">
+            <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">Bem-vindo à Biblioteca Digital!</h1>
+            <p style="font-size: 1.25rem; max-width: 40rem; margin: 0 auto;">Nosso principal foco é a distribuição de
+                livros digitais!</p>
+            <div style="margin-top: 2rem;">
+                <button style="
+        border: 0.25em solid rgb(217, 176, 255);
+        padding: 1em 3em;
+        color: rgb(217, 176, 255);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(100, 61, 136);
+        border-radius: 1em;
+        outline: none;
+        position: relative;
+        transition: all 0.3s;
+        box-shadow:
+          0 0 1em 0.25em rgb(217, 176, 255),
+          0 0 4em 1em rgba(191, 123, 255, 0.781),
+          inset 0 0 0.75em 0.25em rgb(217, 176, 255);
+        text-shadow: 0 0 0.5em rgb(217, 176, 255);
+      "> <a href="produtos.html" class="hover:text-blue-400 transition-colors duration-300">Ver Livros</a>
+
+                    </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 my-10">
+        <section id="sobre"
+            class="mt-16 flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-lg shadow-lg">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4">Sobre Nós</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Nossa Biblioteca Digital busca ser uma fonte confiável e abrangente de conhecimento,
+                    contribuindo para o acesso à leitura e o desenvolvimento cultural.
+                    Nosso objetivo é facilitar a distribuição de livros digitais,
+                    garantindo uma experiência de leitura acessível e de alta qualidade para todos.
+                </p>
+                <div class="mt-6">
+                    <button class="bg-gray-700 text-white border-none py-2 px-6 text-base rounded-lg cursor-pointer
+                                   hover:bg-gray-800 transition-colors duration-300 shadow-md">
+
+                        <div id="conteudo-completo" style="display:none;">
+                            <p>Acreditamos que o conhecimento deve ser livre e sem barreiras. Por isso, investimos em
+                                tecnologia de ponta para oferecer uma plataforma intuitiva e fácil de usar, permitindo
+                                que você encontre e acesse seus livros favoritos a qualquer hora e em qualquer lugar.
+                                Seja no seu smartphone, tablet ou computador, a leitura estará sempre ao seu alcance.
+                                Nosso acervo é cuidadosamente selecionado, abrangendo uma vasta gama de gêneros e temas
+                                para atender a todos os interesses e idades.</p>
+                        </div>
+                        <a href="#"
+                            onclick="document.getElementById('conteudo-completo').style.display='block'; this.style.display='none';">Leia
+                            Mais</a>
+
+
+                    </button>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 bg-gray-100 h-64 flex items-center justify-center rounded-lg overflow-hidden shadow-md">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Pessoa lendo um livro digital" class="w-full h-full object-cover">
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 text-center mt-16 rounded-t-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="mb-6">
+                <span class="text-xl font-bold">Biblioteca Digital</span>
+            </div>
+            <div class="mb-6 flex flex-wrap justify-center gap-x-6 gap-y-2">
+                <a href="index.html" class="hover:text-blue-400 transition-colors duration-300">Início</a>
+                <a href="produtos.html" class="hover:text-blue-400 transition-colors duration-300">Livros</a>
+                <a href="contato.html" class="hover:text-blue-400 transition-colors duration-300">Contato</a>
+                <a href="#sobre" class="hover:text-blue-400 transition-colors duration-300">Sobre</a>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital - Contato</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-inter bg-gray-100 text-gray-800">
+
+    <nav class="bg-gray-900 text-white p-4 flex flex-col sm:flex-row justify-between items-center rounded-b-lg">
+        <div class="flex items-center mb-4 sm:mb-0">
+            <span class="text-2xl font-bold mr-4">Biblioteca Digital</span>
+        </div>
+        <div class="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2">
+            <a href="index.html" class="hover:text-blue-400 transition-colors duration-300">Início</a>
+            <a href="produtos.html" class="hover:text-blue-400 transition-colors duration-300">Livros</a>
+            <a href="contato.html" class="hover:text-blue-400 transition-colors duration-300">Contato</a>
+            <a href="index.html#sobre" class="hover:text-blue-400 transition-colors duration-300">Sobre</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 my-10">
+        <section id="contato" class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-center text-3xl font-bold mb-8">Entre em Contato</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="nome" class="block mb-2 font-bold text-gray-700">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome"
+                           class="w-full p-3 border border-gray-300 rounded-lg box-border focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block mb-2 font-bold text-gray-700">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email"
+                           class="w-full p-3 border border-gray-300 rounded-lg box-border focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+                <div class="mb-4">
+                    <label for="assunto" class="block mb-2 font-bold text-gray-700">Assunto:</label>
+                    <select id="assunto" name="assunto"
+                             class="w-full p-3 border border-gray-300 rounded-lg box-border focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <option value="">Selecione o assunto</option>
+                        <option value="info">Informações sobre livros</option>
+                        <option value="suporte">Suporte técnico</option>
+                        <option value="sugestao">Sugestão de conteúdo</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="mensagem" class="block mb-2 font-bold text-gray-700">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"
+                              class="w-full p-3 border border-gray-300 rounded-lg box-border resize-y focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-500 text-white border-none py-3 px-8 text-lg rounded-lg cursor-pointer
+                                                 hover:bg-blue-600 transition-colors duration-300 shadow-lg">
+                        Enviar Mensagem
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 text-center mt-16 rounded-t-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="mb-6">
+                <span class="text-xl font-bold">Biblioteca Digital</span>
+            </div>
+            <div class="mb-6 flex flex-wrap justify-center gap-x-6 gap-y-2">
+                <a href="index.html" class="hover:text-blue-400 transition-colors duration-300">Início</a>
+                <a href="produtos.html" class="hover:text-blue-400 transition-colors duration-300">Livros</a>
+                <a href="contato.html" class="hover:text-blue-400 transition-colors duration-300">Contato</a>
+                <a href="index.html#sobre" class="hover:text-blue-400 transition-colors duration-300">Sobre</a>
+            </div>
+            <div>
+                <p class="text-sm">&copy; 2025 Biblioteca Digital. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
